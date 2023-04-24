@@ -26,18 +26,35 @@ nav {
 .hamburger:hover ~ nav {
   opacity: 1;
 }
+.hamburger:hover ~nav > div:nth-child(2){
+  opacity: 2;
+}
+
 
 @keyframes top {
-  from {}
-  to {}
+
+  from {
+   transform: 
+    rotate(0deg);
+  }
+    
+  to {
+    transform: translate(10%, 20%) 
+    rotate(45deg);
+  }
 }
 
 @keyframes middle {
   from {}
-  to {}
+  to {color: rgba(0, 0, 0, 0);
+    right: 0;
+    width: 0;}
 }
 
 @keyframes bottom {
-  from {}
-  to {}
+  from {
+    transform: 
+    rotate(0deg);}
+
+  to {transform:  rotate(-45deg);}
 }
